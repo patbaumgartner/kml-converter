@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>${title}</name>
+    <description></description>
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>ffffffff</color>
+        <width>10</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>ffffffff</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <name>${title}</name>
+      <description></description>
+      <styleUrl>#transPurpleLineGreenPoly</styleUrl>
+      <LineString>
+      	<tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+        ${coordinates}
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
